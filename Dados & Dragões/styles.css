@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    background-color: blanchedalmond;
+    text-align: center;
+    font-family: "Nunito Sans";
+}
+
+.Pesquisar button {
+    background-color: #4CAF50;
+    /* Cor de fundo verde */
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+
+    border-radius: 12px;
+    /* Arredonda as bordas */
+}
+
+.Pesquisar button:hover {
+    background-color: #3e8e41;
+    /* Cor de fundo ao passar o mouse */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-card {
+    width: 23%;
+    float: left;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: justify;
+    /* Alinha o texto justificado */
+    text-align: center;
+}
+
+.game-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
