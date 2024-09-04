@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Biblioteca RPG</title>
+</head>
+
+<body>
+    <header>
+        <h1>Biblioteca RPG</h1>
+        <nav>
+            <ul>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="/imgs/seta-para-cima.png" alt="Voltar ao topo" id="voltar-topo">
+        <div class="container-pesquisa">
+            <section class="Pesquisar">
+                <input type="text" placeholder="Digite o nome do sistema">
+                <button type="submit">Pesquisar</button>
+            </section>
+        </div>
+        <section>
+            <h2>O que é RPG?</h2>
+            <p>Já imaginou criar suas próprias aventuras épicas, encarnar um mago poderoso, um guerreiro valente ou um
+                ladrão astuto? No RPG de mesa, você e seus amigos podem se transformar em qualquer personagem e viver
+                histórias incríveis! É como se você fosse o protagonista de um livro que você mesmo escreve, jogando
+                dados para definir o destino do seu herói. Prepare-se para enfrentar dragões, resolver mistérios e
+                construir amizades duradouras em um mundo de fantasia!</p>
+        </section>
+        <section id="biblioteca">
+            <h2>Nossa Biblioteca de Jogos</h2>
+            <div class="row">
+                <div class="game-card">
+                    <a href="/d&d5e.html">
+                        <img src="imgs/dnd.jpeg" alt="Capa do jogo Dungeons & Dragons">
+                    </a>
+                    <h3>Dungeons & Dragons</h3>
+                    <p>O RPG mais famoso do mundo.</p>
+
+                </div>
+                <div class="game-card">
+                    <a href="/cthulhu.html">
+                        <img src="imgs/cthulhu.png" alt="Capa do jogo">
+                    </a>
+                    <h3>Chamado de Cthulhu</h3>
+                    <p>Um RPG sobre horror cósmico em que desbravar os segredos ocultos pode te custar a sua
+                        sanidade
+                    </p>
+
+                </div>
+                <div class="game-card">
+                    <a href="vampiro.html">
+                        <img src="imgs/vampiro.jpg" alt="Capa do jogo">
+                    </a>
+                    <h3>Vampiro a máscara</h3>
+                    <p>Um RPG de horror pessoal em que você interpreta uma criatura do Mundo das Trevas.</p>
+                </div>
+                <div class="game-card">
+                    <a href="ordem.html">
+                        <img src="imgs/ordem.jpeg" alt="Capa do jogo">
+                    </a>
+                    <h3>Ordem Paranormal</h3>
+                    <p>Um mundo em que existe uma "membrana" que separa a nossa realidade de uma outra chamada Outro
+                        Lado. Agentes corajosos arriscam a sua própria vida pra proteger aqueles que desconhecem
+                        essa
+                        outra realidade.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contato">
+        <p>2024 - Biblioteca RPG. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: bibliotecarpg@gmail.com </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
