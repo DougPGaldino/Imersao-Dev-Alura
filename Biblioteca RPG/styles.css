@@ -244,3 +244,7 @@ ul {
     padding-left: 20px;
     /* Adiciona um espaçamento à esquerda para separar o marcador do texto */
 }
+
+.conclusao{
+    font-size: large;
+}
