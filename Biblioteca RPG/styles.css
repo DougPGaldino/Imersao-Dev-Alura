@@ -6,11 +6,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* 100% da viewport height */
     margin: 0;
     padding: 0;
-    font-family: "Nunito Sans";
-    background-color: blanchedalmond;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #1f2022;
+    /* Cor de fundo escura */
+    color: #f5f5f5;
+    /* Cor da fonte clara */
     text-align: center;
 }
 
@@ -18,51 +20,78 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Centraliza verticalmente, se necessário */
+    border-radius: 5px;
+    padding: 10px;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
 
-header nav li {
-    margin: 0 10px;
+header nav li a {
+    color: #bababa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
 }
 
+header nav li a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav li {
+        margin: 10px 0;
+    }
+}
+
+/* container-pesquisa */
 .container-pesquisa {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
-    /* Transforma o container em um flex container */
     justify-content: center;
-    /* Centraliza horizontalmente */
 }
 
 .Pesquisar {
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     align-items: center;
-    /* Centraliza verticalmente */
-    border: 1px solid #ccc;
+    background-color: #292b2c;
+    /* Cor de fundo do campo de pesquisa */
     border-radius: 5px;
     overflow: hidden;
+    padding: 5px 5px;
+    /* Adiciona padding para melhor visualização */
 }
 
 .Pesquisar input[type="text"] {
     flex-grow: 1;
-    padding: 10px 30px;
+    padding: 8px 10px;
+    font-size: large;
     border: none;
     outline: none;
+    background-color: #222426;
+    /* Cor de fundo do input */
+    color: #fff;
+    /* Cor do texto do input */
 }
 
 .Pesquisar button {
     background-color: #4CAF50;
+    /* Mantenha a cor original do botão */
     color: white;
-    padding: 10px 10px;
-    /* Reduz o padding para diminuir o tamanho */
+    padding: 10px 15px;
+    /* Ajuste o padding para caber no texto */
     border: none;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -71,35 +100,47 @@ header nav li {
     background-color: #3e8e41;
 }
 
+
 main {
     padding: 20px;
 }
 
+/* row */
 .row {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    /* Permite que os elementos quebrem para a próxima linha */
+    justify-content: space-between;
+    /* Distribui os elementos horizontalmente */
 }
 
+/* game-card */
 .game-card {
     flex: 1;
-    width: 25%;
+    width: 23%;
+    /* Ajuste a largura para caber mais cards por linha */
     margin: 10px;
     padding: 20px;
     text-align: center;
+    background-color: #292b2c;
+    /* Cor de fundo do card */
+    color: #fff;
+    /* Cor do texto do card */
     box-sizing: border-box;
+    border-radius: 12px;
 }
 
 .game-card img {
     width: 90%;
     height: 170px;
     object-fit: contain;
+    /* Recorta a imagem para caber no espaço */
     transition: transform 0.3s ease;
 }
 
 .game-card img:hover {
-    transform: scale(1.1);
-    /* Aumenta o tamanho da imagem em 10% */
+    transform: scale(1.05);
+    /* Aumenta o tamanho da imagem em 5% */
     cursor: pointer;
 }
 
@@ -121,7 +162,7 @@ main {
 }
 
 footer {
-    color: #3a3a3a;
+    color: #a8a8a8;
     text-align: center;
     padding: 20px;
 }
@@ -133,9 +174,19 @@ footer {
     align-items: center;
     text-decoration: none;
     color: #fff;
-    padding: 10px;
-    border-radius: 1px;
-    transition: background-color 0.3s ease;
+    padding: 1px 3px;
+    /* Aumente o padding para destacar os botões */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #333;
+    /* Cor de fundo padrão dos botões */
+}
+
+.nav-paginaJogos a:hover {
+    background-color: #4CAF50;
+    /* Cor de destaque ao passar o mouse */
+    transform: scale(1.05);
+    /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
 .nav-paginaJogos img {
@@ -172,4 +223,3 @@ ul {
     padding-left: 20px;
     /* Adiciona um espaçamento à esquerda para separar o marcador do texto */
 }
-
