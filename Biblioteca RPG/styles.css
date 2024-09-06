@@ -52,6 +52,21 @@ header nav li a:hover {
     }
 }
 
+h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 36px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Peso da fonte para destacar */
+    color: #fff;
+    /* Cor branca para contraste com o fundo escuro */
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    margin-top: 35px;
+    /* Adiciona espaço acima do H1 */
+    margin-bottom: 8px;
+}
+
 /* container-pesquisa */
 .container-pesquisa {
     max-width: 800px;
@@ -213,6 +228,12 @@ footer {
 
 .imagem01 {
     width: 40%;
+    background-color: #696969;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 4px solid rgb(66, 66, 66);
+    /* Adiciona uma borda de 2px, sólida e preta */
 }
 
 ul {
