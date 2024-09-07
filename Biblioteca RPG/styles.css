@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-body p{
+body p {
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -120,7 +120,6 @@ h1 {
     background-color: #3e8e41;
 }
 
-
 main {
     padding: 20px;
 }
@@ -194,7 +193,7 @@ footer {
     align-items: center;
     text-decoration: none;
     color: #fff;
-    padding: 1px 3px;
+    padding: 2px 3px;
     /* Aumente o padding para destacar os botões */
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -250,8 +249,8 @@ ul {
     /* Adiciona um espaçamento à esquerda para separar o marcador do texto */
 }
 
-.info{
-    background-color:#292b2c;
+.info {
+    background-color: #292b2c;
     border-radius: 12px;
     margin: 10px;
     padding: 0.1%;
@@ -264,6 +263,53 @@ ul {
     border-radius: 12px;
 }
 
-.conclusao{
+.conclusao {
     font-size: large;
+}
+
+/* Para centralizar os cards e ajustar o tamanho */
+.resultados {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resultados .game-card {
+    width: 100px;
+    height: 200px;
+    background-color: #292b2c;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* Inclui padding na largura e altura total */
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultados img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.resultados .game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.resultados .game-card h3 {
+    font-size: 14px;
+    color: #fff;
+    margin: 10px 0 0 0;
+    /* Ajusta a margem superior */
+}
+
+.resultados p {
+    font-size: 30px;
+    color: #bababa;
+    margin: 5px 0 0 0;
+    /* Ajusta a margem superior */
 }
